@@ -1,0 +1,27 @@
+<div class="bg-yellow-25 h-[100vh]">
+    <!-- Navbar -->
+<nav class="bg-yellow-300 p-4">
+    <div class="container mx-auto flex items-center justify-between">
+        <!-- Brand Logo -->
+        <a href="#" class="text-black text-3xl  font-bold">
+            
+            Crick-Era
+        </a>
+
+        <!-- Navigation Menus -->
+        <div class="flex space-x-4">
+            <a [routerLink]="'/live'"  class="text-black cursor-pointer">Live Score</a>
+            <a [routerLink]="'/all-matches'"  class="text-black cursor-pointer">All Matches</a>
+            <a routerLink="/point-table"  class="text-black cursor-pointer">CWC2023 Point Table</a>
+            <a routerLink="/"  class="text-black cursor-pointer">Home</a>
+        </div>
+        <div></div>
+    </div>
+</nav>
+<div class="container mx-auto px-16">
+
+
+<router-outlet></router-outlet>
+</div>
+
+</div>
